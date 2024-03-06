@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Functional Chatbot</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f2f2f2;
+        margin: 0;
+        padding: 20px;
+        box-sizing: border-box;
+    }
+    .chat-container {
+        max-width: 500px;
+        margin: 0 auto;
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        overflow: hidden;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        position: relative;
+    }
+    .chat-box {
+        padding: 20px;
+        background-color: #fff;
+        height: 300px;
+        overflow-y: auto;
+        border-bottom: 1px solid #ccc;
+    }
+    .user-message {
+        text-align: right;
+        color: #007bff;
+        margin-bottom: 10px;
+    }
+    .bot-message {
+        text-align: left;
+        color: #333;
+        margin-bottom: 10px;
+    }
+    .input-container {
+        display: flex;
+        align-items: center;
+        padding: 10px;
+        background-color: #f9f9f9;
+    }
+    .input-box {
+        flex: 1;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        margin-right: 10px;
+    }
+    .input-btn {
+        padding: 10px 20px;
+        background-color: #007bff;
+        color: #fff;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+    .input-btn:hover {
+        background-color: #0056b3;
+    }
+    .ai-image {
+        max-width: 100%;
+        height: auto;
+        position: absolute;
+        bottom: 10px;
+        right: 10px;
+        z-index: -1;
+    }
+</style>
+</head>
+<body>
+
+<div class="chat-container">
+    <div class="chat-box" id="chat-box"></div>
+    <div class="input-container">
+        <input type="text" class="input-box" id="user-input" placeholder="Type your message...">
+        <button class="input-btn" onclick="sendMessage()">Send</button>
+    </div>
+    <img src="ai-image.jpg" alt="AI" class="ai-image">
+</div>
+
+<script>
+    function sendMessage() {
+        var userInput = document.getElementById("user-input").value;
+        if (userInput.trim() === "") return;
+        
+        appendMessage("user", userInput);
+
+        // Process user input
+        processUserInput(userInput);
+
+        // Clear input field after sending message
+        document.getElementById("user-input").value = "";
+    }
+
+    function appendMessage(sender, message) {
+        var chatBox = document.getElementById("chat-box");
+        var messageDiv = document.createElement("div");
+        messageDiv.classList.add(sender + "-message");
+        messageDiv.textContent = message;
+        chatBox.appendChild(messageDiv);
+
+        // Scroll to the bottom of the chat box
+        chatBox.scrollTop = chatBox.scrollHeight;
+    }
+
+    function processUserInput(userInput) {
+        // Define commands that the chatbot can recognize and respond to
+        var commands = {
+            "hello": "Hi there! How can I help you?",
+            "how are you": "I'm just a bot, but thanks for asking!",
+            "what is your name": "My name is ChatBot.",
+	    "who made you": "I'm developed by Mr. Divesh Jain aka DJ.",
+            "time": getTime(),
+            "date": getDate(),
+            "random number": getRandomNumber(),
+            "weather": "Sorry, I can't provide weather information at the moment.",
+            "news": "Sorry, I can't provide news updates at the moment."
+            // Add more commands here as needed
+        };
+
+        // Check if the user input matches any recognized commands
+        var response = commands[userInput.toLowerCase()];
+        if (response) {
+            appendMessage("bot", response);
+        } else {
+            appendMessage("bot", "I'm sorry, I didn't understand that.");
+        }
+    }
+
+    function getTime() {
+        var now = new Date();
+        var hours = now.getHours();
+        var minutes = now.getMinutes();
+        return "It's currently " + hours + ":" + (minutes < 10 ? "0" + minutes : minutes);
+    }
+
+    function getDate() {
+        var now = new Date();
+        var date = now.getDate();
+        var month = now.getMonth() + 1;
+        var year = now.getFullYear();
+        return "Today's date is " + year + "-" + month + "-" + date;
+    }
+
+    function getRandomNumber() {
+        return "Here's a random number: " + Math.floor(Math.random() * 100);
+    }
+</script>
+
+</body>
+</html>
