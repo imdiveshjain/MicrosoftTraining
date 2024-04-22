@@ -12,6 +12,10 @@
             function App() {
                 let[time, setTime] = React.useState();
 
+                setInterval(() => {
+                    setTime(new Date().toLocaleTimeString());
+                },1000);
+
                 return React.createElement("h1", null, new Date().toLocaleTimeString());
             }
            
