@@ -45,15 +45,19 @@ undeined: when the variable has a value but you don't know it.
 // }
 // console.log(arr[0]);
 
-
-
-
 //rest operator: accepts all the arguments which are entered
-function sum(...numbers){
-    let total = 0;
-    for(let num of numbers){
-        total += ṇnum;
-    }
-    return total;
-}
-console.log(sum(1,2,3,4,5,6));fhgfhfhgg
+// function sum(...numbers){
+//     let total = 0;
+//     for(let num of numbers){
+//         total += ṇnum;
+//     }
+//     return total;
+// }
+// console.log(sum(1,2,3,4,5,6));
+
+// object destructuring
+// let obj= {
+//     name = "DJ",
+//     Age = 21
+// }
+// let 
