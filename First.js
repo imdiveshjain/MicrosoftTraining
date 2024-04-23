@@ -63,6 +63,8 @@ undeined: when the variable has a value but you don't know it.
 // let 
 Left side --> Backend
 Right side --> Frontend
+HCJ --> HTML CSS JavaScript
+
 
 static Website
 HCJ --> Browser --> paint
@@ -70,6 +72,7 @@ HCJ --> Browser --> paint
 Dynamic Website
 
     server side rendering 
-        db ->
+        db --> get data --> HCJ --> Browser --> Paint
     
     client side rendering
+        
