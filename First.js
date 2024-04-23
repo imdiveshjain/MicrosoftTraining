@@ -75,4 +75,4 @@ Dynamic Website
         db --> get data --> HCJ --> Browser --> Paint
     
     client side rendering
-        
+        db --> get data --> api --> HCJ --> Browser --> paint 
