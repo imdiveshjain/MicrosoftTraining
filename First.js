@@ -61,3 +61,15 @@ undeined: when the variable has a value but you don't know it.
 //     Age = 21
 // }
 // let 
+Left side --> Backend
+Right side --> Frontend
+
+static Website
+HCJ --> Browser --> paint
+
+Dynamic Website
+
+    server side rendering 
+        db ->
+    
+    client side rendering
