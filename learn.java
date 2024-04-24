@@ -69,6 +69,7 @@ public class learn {
             System.out.println(str2.charAt(0)); // character at a particular index
             System.out.println(str.equals(str2)); //checks if it is equal
             System.out.println(str.equalsIgnoreCase(str2)); // ignores the equal
-
+            System.out.println(str2.toLowerCase()); //lower case
+            System.out.println(str2.toUpperCase()); //Upper case
     }
 }
