@@ -16,5 +16,6 @@ public class ArrayListt {
         System.out.println(al.remove(0));
         System.out.println(al.contains(5));
         System.out.println(al.indexOf(al));
+        System.out.println(al.isEmpty());
     }
 }
