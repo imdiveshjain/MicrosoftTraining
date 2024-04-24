@@ -101,7 +101,7 @@ public class learn {
         }
 }
 
-// public class Hw {
+// public class ThrowThrows {
 
 //     public static void validate(int age) {
 //         if (age < 0) {
@@ -117,3 +117,9 @@ public class learn {
 //         }
 //     }
 // }
+
+public class ArrayList{
+    public static void main(String[] args){
+
+    }
+}
