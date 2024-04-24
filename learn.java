@@ -117,9 +117,11 @@ public class learn {
 //         }
 //     }
 // }
+import java.util.ArrayList;
 
 public class ArrayList{
     public static void main(String[] args){
-        ArrayList<>
+        ArrayList<Integer> al = new ArrayList<>();
+        List<Integer> a12 = new ArrayList<>();
     }
 }
