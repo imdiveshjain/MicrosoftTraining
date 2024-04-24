@@ -59,9 +59,15 @@ public class learn {
         //     }
 
             String str = "Divesh";
-            String str2 = new String("foundation");
+        // String str2 = new String("foundation");
+           String str2 = "Jain";
             System.out.println(str);
             System.out.println(str2);
-            
+            System.out.println(str.concat(str2));
+            System.out.println(str+str2);
+            System.out.println(str.length());
+            System.out.println(str2.charAt(0));
+            System.out.println(str2);
+
     }
 }
