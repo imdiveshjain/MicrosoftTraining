@@ -13,5 +13,6 @@ public class ArrayListt {
         }
 
         System.out.println(al.size());
+        System.out.println(al.remove(0));
     }
 }
