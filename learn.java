@@ -60,5 +60,8 @@ public class learn {
 
             String str = "Divesh";
             String str2 = new String("foundation");
+            System.out.println(str);
+            System.out.println(str2);
+            
     }
 }
