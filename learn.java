@@ -58,5 +58,7 @@ public class learn {
         //         System.out.println(num);
         //     }
 
+            String str = "Divesh";
+            String str2 = new String("foundation");
     }
 }
