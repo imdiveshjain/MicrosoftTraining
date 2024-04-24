@@ -94,5 +94,26 @@ public class learn {
                 System.out.println("Error: Division by zero");
                 System.out.println(e.getMessage());
             }
+
+            
+            
+
         }
 }
+
+// public class Hw {
+
+//     public static void validate(int age) {
+//         if (age < 0) {
+//             throw new IllegalArgumentException("Age cannot be negative");
+//         }
+//     }
+
+//     public static void main(String[] args) {
+//         try {
+//             validate(-5);
+//         } catch (IllegalArgumentException e) {
+//             System.out.println(e.getMessage());
+//         }
+//     }
+// }
