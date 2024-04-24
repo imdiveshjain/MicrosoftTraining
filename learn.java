@@ -67,7 +67,8 @@ public class learn {
             System.out.println(str+str2); // adding or concatenation
             System.out.println(str.length()); // length of the string 
             System.out.println(str2.charAt(0)); // character at a particular index
-            System.out.println(str2);
+            System.out.println(str.equals(str2)); //checks if it is equal
+            System.out.println(str.equalsIgnoreCase(str2)); // ignores the equal
 
     }
 }
