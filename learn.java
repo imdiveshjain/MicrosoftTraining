@@ -12,6 +12,11 @@ public class learn {
 
         String status = (age >= 18) ? "Eligible" : "Not Eligible";
         System.out.println(status);
+        
+        int num = scn.nextInt();
+        String statuss = (num %2== 0) ? "Positive" : "Not Positive";
+        System.out.println(statuss);
+
     }
 }
 
