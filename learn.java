@@ -46,13 +46,15 @@ public class learn {
         //     default:
         //         System.out.println("Invalid day"); 
         // }
-        int[] ages = new int[3];
-        ages[0]=5;
-        ages[1]=10;
-        ages[2]=15;
-        int[] num = {1,2,3,4,5};
-        for(int i=0; i<num.length;i++){
-            System.out.println(num[i]);
-        }
+        // int[] ages = new int[3];
+        // ages[0]=5;
+        // ages[1]=10;
+        // ages[2]=15;
+        // int[] num = {1,2,3,4,5};
+        // for(int i=0; i<num.length;i++){
+        //     System.out.println(num[i]);
+        // }
+
+
     }
 }
