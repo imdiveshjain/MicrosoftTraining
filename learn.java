@@ -63,10 +63,10 @@ public class learn {
            String str2 = "Jain";
             System.out.println(str);
             System.out.println(str2);
-            System.out.println(str.concat(str2));
-            System.out.println(str+str2);
-            System.out.println(str.length());
-            System.out.println(str2.charAt(0));
+            System.out.println(str.concat(str2)); //concatenation
+            System.out.println(str+str2); // adding or concatenation
+            System.out.println(str.length()); // length of the string 
+            System.out.println(str2.charAt(0)); // character at a particular index
             System.out.println(str2);
 
     }
