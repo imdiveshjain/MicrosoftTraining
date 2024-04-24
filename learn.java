@@ -31,20 +31,28 @@ public class learn {
         // System.out.println("Sum of numbers from 1 to 10: " + sum);
         
         // Initialize the day variable before using it
-        String day = "2"; 
+        // String day = "2"; 
 
-        switch (day) {
-            case "1":
-                System.out.println("Monday");
-                break;
-            case "2":
-                System.out.println("Tuesday");
-                break;
-            case "3":
-                System.out.println("Wednesday");
-                break;
-            default:
-                System.out.println("Invalid day"); 
+        // switch (day) {
+        //     case "1":
+        //         System.out.println("Monday");
+        //         break;
+        //     case "2":
+        //         System.out.println("Tuesday");
+        //         break;
+        //     case "3":
+        //         System.out.println("Wednesday");
+        //         break;
+        //     default:
+        //         System.out.println("Invalid day"); 
+        // }
+        int[] ages = new int[3];
+        ages[0]=5;
+        ages[1]=10;
+        ages[2]=15;
+        int[] num = {1,2,3,4,5};
+        for(int i=0; i<num.length;i++){
+            System.out.println(num[i]);
         }
     }
 }
