@@ -72,5 +72,7 @@ public class learn {
             System.out.println(str2.toLowerCase()); //lower case
             System.out.println(str2.toUpperCase()); //Upper case
             System.out.println(str2.trim()); //removes spaces
-    }
+            System.out.println(str2.replaceFirst(str, str2)); //replaces only the first occurence 
+            System.out.println(str2.replaceAll(str, str2)); //replaces all the occurence 
+        }
 }
