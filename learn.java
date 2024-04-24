@@ -75,5 +75,12 @@ public class learn {
             System.out.println(str2.replaceFirst(str, str2)); //replaces only the first occurence 
             System.out.println(str2.replaceAll(str, str2)); //replaces all the occurence 
             System.out.println(str.substring(0,2));
+
+            String str3 = "orange,apple,banana";
+            String[] fruits = str3.split(",");
+            System.out.println(fruits[0]);
+            for (String fruit : fruits) {
+                System.out.println(fruit);
+            }
         }
 }
