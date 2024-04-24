@@ -54,7 +54,9 @@ public class learn {
         // for(int i=0; i<num.length;i++){
         //     System.out.println(num[i]);
         // }
-
+            for (int num: nums){
+                System.out.println(num);
+            }
 
     }
 }
