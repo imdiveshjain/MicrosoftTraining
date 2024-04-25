@@ -1,1 +1,1 @@
- 
+client --> controller --> service layer --> repository/dao layer --> database
