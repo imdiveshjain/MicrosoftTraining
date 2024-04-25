@@ -8,8 +8,9 @@ public class inher {
         s1.toEat();
         s1.age=21;
         s1.rollNo=89;
-    }
     
+        System.out.println(s1.name);
+    }    
 }
 
 class Person{
