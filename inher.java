@@ -31,4 +31,9 @@ class Student extends Person
     void toStudy(){
         System.out.println("Student is studying");
     }
+
+    @Override
+    void toEat(){
+        System.out.println(this.name + "eating pizza");
+    }
 }
