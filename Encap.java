@@ -9,12 +9,7 @@ public class Encap {
         System.out.println(s1.getId());
         System.out.println(s1.getName());
         System.out.println(s1.getRollNo());
-        if(s1.getAge() > 18) {
-            System.out.println(s1.getAge());
-        }
-        else{
-            System.out.println("Age is below 18");
-        }
+        System.out.println(s1.getAge());
     }
 }
 
@@ -53,7 +48,13 @@ class Student{
     }
         
     public void setAge(int age){
-        this.age = age;
+        if(age >= 18) {
+            this.age = age;
+        }
+        else{
+            System.out.println("Age is below 18");
+        }
+
     }
 
     void display(){
