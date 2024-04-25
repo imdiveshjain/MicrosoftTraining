@@ -12,6 +12,9 @@ public class Encap {
         if(s1.getAge() > 18) {
             System.out.println(s1.getAge());
         }
+        else{
+            System.out.println("Age is below 18");
+        }
     }
 }
 
