@@ -3,3 +3,9 @@ public class Encap {
         
     }
 }
+
+class Student{
+    int id;
+    String name;
+    int rollNo;
+}
