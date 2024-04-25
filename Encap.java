@@ -15,8 +15,24 @@ class Student{
         return this.id;
     }
     
-    public  setId(){
+    public void setId(int id){
+        this.id = id;
+    }
 
+    public String getName(){
+        return this.name;
+    }
+
+    public void getName(String name){
+        this.name = name;
+    }
+    
+    public int getRollNo(){
+        return this.rollNo;
+    }
+    
+    public void setRollNo(int rollNo){
+        this.rollNo = rollNo;
     }
 
     void display(){
