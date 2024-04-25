@@ -11,7 +11,7 @@ public class Claobj {
         // c1.display();
 
         Car c2 = new Car("Toyota",2024);
-
+        c2.display();
     }
 }
 class Car{
