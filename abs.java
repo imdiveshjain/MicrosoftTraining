@@ -1,32 +1,32 @@
 abstract class Shape
 {
-    float dim1,dim2,radius;
+    float a,b,radius;
     abstract float area();
 }
 class Triangle extends Shape
 {
         Triangle(float d1, float d2)
         {
-            dim1=d1;
-            dim2=d2;
+            a=d1;
+            b=d2;
         }
         float area()
         {
             System.out.println("Area of Triangle is ");
-            return (dim1*dim2)/2;
+            return (a*b)/2;
         }
 }
 class Rectangle extends Shape
 {
     Rectangle(float d1, float d2)
     {
-        dim1=d1;
-        dim2=d2;
+        a=d1;
+        b=d2;
     }
     float area()
     {
         System.out.println("Area of Rectangle is ");
-        return dim1*dim2;
+        return a*b;
     }
 }
 class Circle extends Shape
