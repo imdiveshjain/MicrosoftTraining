@@ -15,6 +15,10 @@ class Student{
         return this.id;
     }
     
+    public  setId(){
+
+    }
+
     void display(){
         System.out.println(id + name + rollNo);
     }
