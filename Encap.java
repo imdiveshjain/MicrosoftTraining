@@ -10,6 +10,11 @@ class Student{
     private int id;
     private String name;
     private int rollNo;
+    
+    public int getId(){
+        return this.id;
+    }
+    
     void display(){
         System.out.println(id + name + rollNo);
     }
