@@ -4,5 +4,12 @@ public class Claobj {
     }
 }
 class Car{
-    
+    //instance variables
+    String brand;
+    int year;
+
+    //methods
+    void display(){
+        System.out.println(brand+ " " + year);
+    }
 }
